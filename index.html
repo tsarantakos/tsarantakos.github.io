@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Themistoklis Sarantakos · Researcher / ML Engineer</title>
+  <meta name="description" content="Personal page: IoT data science, anomaly detection, federated learning and LLM assistants.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- ===== Hero ===== -->
+    <header class="card hero">
+      <div class="avatar">
+        <img src="assets/photo.jpg" alt="Themistoklis Sarantakos">
+      </div>
+      <h1>Themistoklis Sarantakos</h1>
+      <p class="tagline">Researcher / Machine Learning Engineer @ Spark Works · Internet of Things · Data Analytics</p>
+      <p class="location">📍 Patras, Greece</p>
+      <nav class="links">
+        <a href="mailto:tsarantakos@sparkworks.net">✉ tsarantakos@sparkworks.net</a>
+        <a href="https://www.linkedin.com/in/themistoklis-sarantakos-738645343/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=zUGJXKMAAAAJ&amp;hl=en">Google Scholar</a>
+      </nav>
+    </header>
+
+    <!-- ===== About ===== -->
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        I build data and AI systems that turn raw sensor streams into decisions. My work spans
+        anomaly detection at the edge, time-series imputation, federated learning, and
+        tool-calling LLM assistants that let people talk to their IoT data, taking ideas from
+        notebook experiments all the way to deployed services on AWS.
+      </p>
+      <div class="tags">
+        <span>Python</span><span>scikit-learn</span><span>PyTorch / TensorFlow</span>
+        <span>Time series</span><span>Anomaly detection</span><span>Federated learning</span>
+        <span>LangChain</span><span>AWS Bedrock &amp; Lambda</span><span>Airflow</span>
+        <span>Docker</span><span>Angular</span><span>React / Next.js</span>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="card">
+      <h2>Work Experience</h2>
+      <div class="item">
+        <h3>Machine Learning Engineer</h3>
+        <p class="meta">Spark Works · Sep 2021 – Present</p>
+        <p>
+          R&amp;D on IoT data platforms and EU research projects: anomaly detection for indoor
+          environments, water-domain analytics, and LLM assistants built on the Spark Works data lake.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Associate Researcher</h3>
+        <p class="meta">Industrial Systems Institute / Research Centre ATHENA · Patras · Aug 2025 – May 2026</p>
+        <p>Contract researcher on Digital Twins and Industry 4.0.</p>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="card">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>MSc in Human-Computer Interaction</h3>
+        <p class="meta">University of Patras · Oct 2025 – Mar 2027 (in progress)</p>
+      </div>
+      <div class="item">
+        <h3>BSc in Mathematics</h3>
+        <p class="meta">University of Patras</p>
+        <p>Focus on statistics and statistical data analysis.</p>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="card">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>AC3: Edge Anomaly &amp; Presence Detection</h3>
+          <span class="badge">EU Horizon</span>
+        </div>
+        <p>
+          Indoor-environment use case: Isolation Forest anomaly detection on temperature, humidity
+          and air-quality sensors, plus room-presence detection from light and motion data.
+          Containerised for edge deployment with message-queue integration; contributed to the
+          project's formal deliverables.
+        </p>
+        <div class="tags small"><span>Isolation Forest</span><span>Prophet</span><span>Docker</span><span>MQ</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Water Analytics: Tethys &amp; WWTP</h3>
+          <span class="badge">Water</span>
+        </div>
+        <p>
+          Missing-data imputation for water-consumption meters (deep time-series imputation models
+          benchmarked against classical baselines), and a tested data-quality and anomaly-detection
+          pipeline for wastewater-treatment water-quality data.
+        </p>
+        <div class="tags small"><span>PyPOTS</span><span>Imputation</span><span>Data quality</span><span>pytest</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Conversational Assistants for IoT Data</h3>
+          <span class="badge">LLM</span>
+        </div>
+        <p>
+          Tool-calling chat assistants that answer questions over live sensor APIs, evolving from
+          local Ollama prototypes to a reusable AWS Lambda engine on Bedrock with guardrails,
+          per-deployment tools and prompts, integrated into the SparkWorks console.
+        </p>
+        <div class="tags small"><span>LangChain</span><span>AWS Bedrock</span><span>Lambda</span><span>CloudFormation</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Federated Learning for Olive Leaf Disease</h3>
+          <span class="badge">Research</span>
+        </div>
+        <p>
+          Image classification of olive-leaf diseases (CNN, ResNet50, EfficientNet, MobileNet), then
+          a benchmark of federated strategies (FedAvg, FedProx, FedYogi, PSI-PFL) under
+          Dirichlet label skew with Flower.
+        </p>
+        <div class="tags small"><span>Flower</span><span>TensorFlow</span><span>Non-IID</span><span>Computer vision</span></div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Invisible Caregiver</h3>
+          <span class="badge">Prototype</span>
+        </div>
+        <p>
+          Turning home IoT sensor data into compassionate natural-language summaries for
+          caregivers of elderly people, with a FastAPI backend and a Next.js dashboard and chat.
+        </p>
+        <div class="tags small"><span>FastAPI</span><span>Ollama</span><span>Next.js</span><span>ThingsBoard</span></div>
+      </article>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section class="card">
+      <h2>Selected Publications</h2>
+      <article class="pub">
+        <h3>A Tool to Facilitate the Design of Smart Contracts in Smart Water Distribution Networks</h3>
+        <p class="authors"><b>T. Sarantakos</b>, D. Amaxilatis, A. Pagano, D. Garlisi, R. L. Taloma, T. Cattai, et al.</p>
+        <p class="meta">IFIP Networking Conference 2024</p>
+        <a class="more" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=zUGJXKMAAAAJ&amp;citation_for_view=zUGJXKMAAAAJ:u5HHmVD_uO8C">View Publication →</a>
+      </article>
+      <article class="pub">
+        <h3>Olive Leaf Infection Detection Using the Cloud-Edge Continuum</h3>
+        <p class="authors"><b>T. Sarantakos</b>, D. M. J. Gutierrez, D. Amaxilatis</p>
+        <p class="meta">International Symposium on Algorithmic Aspects of Cloud Computing (ALGOCLOUD) 2023</p>
+        <a class="more" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=zUGJXKMAAAAJ&amp;citation_for_view=zUGJXKMAAAAJ:Tyk-4Ss8FVUC">View Publication →</a>
+      </article>
+      <article class="pub">
+        <h3>Filling in the Blanks: Applying Data Imputation in Incomplete Water Metering Data</h3>
+        <p class="authors">D. Amaxilatis, <b>T. Sarantakos</b>, I. Chatzigiannakis, G. Mylonas</p>
+        <p class="meta">IEEE International Smart Cities Conference (ISC2) 2024</p>
+        <a class="more" href="https://arxiv.org/abs/2506.08882">View Preprint →</a>
+      </article>
+      <a class="more all" href="https://scholar.google.com/citations?user=zUGJXKMAAAAJ&amp;hl=en">All publications on Google Scholar →</a>
+    </section>
+
+    <footer>© 2026 Themistoklis Sarantakos</footer>
+  </main>
+</body>
+</html>
