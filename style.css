@@ -106,3 +106,4 @@ footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 12
 .more:hover { text-decoration: underline; }
 .more.all { display: inline-block; margin-top: 4px; color: var(--accent-2); }
 .location { color: var(--muted); font-size: .9rem; margin: -12px 0 20px; }
+.award { border-left-color: var(--accent-2); }
